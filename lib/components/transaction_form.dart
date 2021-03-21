@@ -33,7 +33,8 @@ class _TransactionFormState extends State<TransactionForm> {
     return Card(
       elevation: 5,
       child: Padding(
-        padding: const EdgeInsets.all(10),
+        //padding: EdgeInsets.all(10),
+        padding: EdgeInsets.fromLTRB(10, 0, 10, 10),
         child: Column(children: [
           TextField(
             controller: titleController,
@@ -59,7 +60,7 @@ class _TransactionFormState extends State<TransactionForm> {
                 onPressed: _submitForm,
               ),
             ],
-          )
+          ),
         ]),
       ),
     );
